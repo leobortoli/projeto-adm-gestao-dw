@@ -2,6 +2,8 @@
 
 Projeto Final de Desenvolvimento para Web 2026/2. Ofertas do recorte: Administração presencial (O01), Administração EaD (O02) e Tecnologia em Gestão Comercial EaD (O32). O plano do grupo está em `docs/Plano_Grupo_02_Painel_ENADE.pdf`.
 
+O que o professor ensinou em cada aula e como aplicar em cada parte (com checklist para o PR): [docs/METODOLOGIA-DO-PROFESSOR.md](docs/METODOLOGIA-DO-PROFESSOR.md).
+
 ## Como rodar
 
 1. No phpMyAdmin, crie o banco `painel_enade` (agrupamento `utf8mb4_unicode_ci`). Com ele selecionado, importe `banco/estrutura.sql` e depois `banco/dados_iniciais.sql`.
