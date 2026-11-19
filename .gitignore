@@ -1,0 +1,13 @@
+# Sistema
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Anexos enviados durante os testes (a pasta fica no repositório)
+app/uploads/*
+!app/uploads/.gitkeep
+!app/uploads/index.html
+
+# Pacote de entrega
+*.zip
