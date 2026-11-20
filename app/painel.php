@@ -3,15 +3,11 @@
 // Painel: filtro de oferta e edição, mostrando o resultado ENADE que está no banco.
 // Murilo Alves (base). Falta: cards, barras, histórico e ações (resto do grupo).
 
-require 'conexao.php';
+//Só entra quem fez login:
+require __DIR__ . '/includes/conexao.php';
+require __DIR__ . '/includes/autenticacao.php';
 
 const ORIGEM_OFICIAL = 'OFICIAL_INEP';
-
-//Só entra quem fez login:
-if (!isset($_SESSION['usuario_id'])) {
-    header('Location: login.php?bloqueado=1');
-    exit;
-}
 
 //Ofertas do recorte (se a oferta da URL não existir, usa a primeira):
 $ofertas = $conexao->query('SELECT id, curso, grau_academico, modalidade FROM ofertas ORDER BY id')->fetch_all(MYSQLI_ASSOC);

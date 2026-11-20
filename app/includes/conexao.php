@@ -1,6 +1,6 @@
 <?php
 // Projeto Final - Painel ENADE - Grupo 02
-// Conexão com o banco (incluída no topo das páginas).
+// Conexão com o banco (incluída no topo das páginas com require __DIR__ . '/includes/conexao.php').
 // Murilo Alves
 
 //Dados do banco (padrão do XAMPP: root sem senha; troque se o seu for diferente):
