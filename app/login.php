@@ -3,7 +3,7 @@
 // Login: formulário de login com usuário e senha guardados no banco (senha com hash).
 // Murilo Alves
 
-require 'conexao.php';
+require __DIR__ . '/includes/conexao.php';
 
 //Quem já entrou vai direto para o painel:
 if (isset($_SESSION['usuario_id'])) {
