@@ -41,22 +41,10 @@ if ($resultado && $resultado['inscritos'] > 0) {
     $participacao = number_format($resultado['participantes'] / $resultado['inscritos'] * 100, 2, ',', '.') . '%';
 }
 ?>
-<!doctype html>
-<html lang="pt-BR">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Painel ENADE</title>
-    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
-</head>
-<body class="bg-light">
-    <nav class="navbar navbar-dark bg-primary mb-4">
-        <div class="container">
-            <a class="navbar-brand" href="painel.php">Painel ENADE</a>
-            <span class="navbar-text ms-auto me-3">Olá, <?= htmlspecialchars($_SESSION['usuario_nome']) ?></span>
-            <a class="btn btn-outline-light btn-sm" href="logout.php">Sair</a>
-        </div>
-    </nav>
+<?php
+$tituloPagina = 'Painel ENADE';
+require 'includes/cabecalho.php';
+?>
 
     <main class="container pb-5">
         <h1 class="h3 mb-3">Painel de indicadores ENADE</h1>
@@ -115,5 +103,4 @@ if ($resultado && $resultado['inscritos'] > 0) {
             </div>
         <?php endif; ?>
     </main>
-</body>
-</html>
+<?php require 'includes/rodape.php'; ?>
