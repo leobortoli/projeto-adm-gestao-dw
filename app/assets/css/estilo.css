@@ -1,0 +1,20 @@
+/* Painel ENADE - Grupo 02 - estilos próprios (carregam depois do Bootstrap) */
+
+:root {
+    --cor-principal: #1f3a5f;
+    --cor-destaque: #2e7d9a;
+}
+
+/* Menu */
+.navbar.bg-primary {
+    background-color: var(--cor-principal) !important;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.navbar .btn-outline-light:hover {
+    color: var(--cor-principal);
+}
