@@ -18,3 +18,42 @@
 .navbar .btn-outline-light:hover {
     color: var(--cor-principal);
 }
+
+/* Fundo da página */
+body {
+    background-color: #f2f5f9 !important;
+}
+
+/* Botão principal (Bootstrap 5.2+ usa variáveis) */
+.btn-primary {
+    --bs-btn-bg: var(--cor-destaque);
+    --bs-btn-border-color: var(--cor-destaque);
+    --bs-btn-hover-bg: var(--cor-principal);
+    --bs-btn-hover-border-color: var(--cor-principal);
+    --bs-btn-active-bg: var(--cor-principal);
+    --bs-btn-active-border-color: var(--cor-principal);
+}
+
+/* Cards */
+.card {
+    border: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 4px rgba(31, 58, 95, 0.12);
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 2px solid var(--cor-destaque);
+}
+
+/* Tabela de resultado */
+.table th {
+    color: var(--cor-principal);
+    width: 35%;
+}
+
+/* Título da página */
+h1.h3 {
+    color: var(--cor-principal);
+    font-weight: 600;
+}
